@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+
+     <style>
+        body{
+            font-family:'Courier New', Courier, monospace;
+        }
+        #mapid{
+            height: 90%;
+           width: 85%;
+           
+        }
+        .map{
+            display: flex;
+            height: 75vh;
+            
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+        .heading{
+            display: flex;
+           justify-content: center;
+        }
+        .coord{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+
+        .button{
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;;
+        }
+        #center-btn{
+            height: 35px;
+            width: 150px;
+            background-color: black;
+            color: white;
+            font-size: medium;
+            border-radius: 5px;
+        }
+
+     </style>
+
+    <title>ISS Tracker</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>ISS Tracker</h1>
+    </div>
+
+    <div class="coord">
+        <p>latitude: <span id="lat"></span>°</p>
+        <p>longitude: <span id="lon"></span>°</p>
+    </div>
+    <div class="map">
+         <div id="mapid"></div>
+    </div>
+<!----
+    <div class="button">
+        <button id="center-btn">Center ISS</button>
+    </div>-->
+    
+<script src="iss.js">
+   
+    
+</script>
+</body>
+</html>
