@@ -14,7 +14,7 @@ const tiles = L.tileLayer(tileURL, {attribution});
 tiles.addTo(map);
 //changing the icon
 var myIcon = L.icon({
-    iconUrl: 'pngwing.com.png',
+    iconUrl: 'pngwing.com-min.png',
     iconSize: [50, 32],
     iconAnchor: [25, 16],
     
