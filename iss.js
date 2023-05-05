@@ -42,7 +42,7 @@ async function getISS(){
    marker.setLatLng([latitude,longitude]);
 
    if(firstTime){
-   map.setView([latitude,longitude],2);
+   map.setView([latitude,longitude],3);
    firstTime = false;
    }
 
