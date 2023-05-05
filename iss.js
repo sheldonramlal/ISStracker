@@ -27,15 +27,17 @@ const marker = L.marker([0,0],{ icon:myIcon }).addTo(map);
 
 const lat = document.getElementById('lat');
 const lon = document.getElementById('lon');
+const vel = document.getElementById('vel');
 
 let firstTime = true;
 
 async function getISS(){
     const response = await fetch(api_url);
     const data = await response.json();
-    const {latitude, longitude } = data;
+    const {latitude, longitude, velocity } = data;
     lat.innerHTML = latitude.toFixed(3);
     lon.innerHTML = longitude.toFixed(3);
+    vel.innerHTML = velocity.toFixed(3);
 
    marker.setLatLng([latitude,longitude]);
 
